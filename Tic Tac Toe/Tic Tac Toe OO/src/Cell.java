@@ -28,6 +28,8 @@ public class Cell {
         content = Seed.NO_SEED;
     }
 
+
+
     /** Paint itself on the graphics canvas, given the Graphics context */
     public void paint(Graphics g) {
         // Use Graphics2D which allows us to set the pen's stroke
