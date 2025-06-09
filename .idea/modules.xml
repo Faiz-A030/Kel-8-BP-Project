@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Kel-8-BP-Project.iml" filepath="$PROJECT_DIR$/.idea/Kel-8-BP-Project.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tic Tac Toe/Tic Tac Toe.iml" filepath="$PROJECT_DIR$/Tic Tac Toe/Tic Tac Toe.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Tic Tac Toe/Tic Tac Toe with OO/Tic Tac Toe with OO.iml" filepath="$PROJECT_DIR$/Tic Tac Toe/Tic Tac Toe with OO/Tic Tac Toe with OO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tic Tac Toe/Tic Tac Toe OO/Tic Tac Toe  OO.iml" filepath="$PROJECT_DIR$/Tic Tac Toe/Tic Tac Toe OO/Tic Tac Toe  OO.iml" />
     </modules>
   </component>
 </project>
