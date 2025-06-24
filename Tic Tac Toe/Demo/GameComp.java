@@ -1,8 +1,10 @@
 import java.awt.*;
 
 public class GameComp {
-    public static final Color COLOR_BG = new Color(125, 0, 0);
-    public static final Color COLOR_BG_STATUS = new Color(245, 245, 250);
-    public static final Font FONT_STATUS = new Font("Verdana", Font.PLAIN, 14);
-    public static final Font FONT_SCORE = new Font("Verdana", Font.BOLD, 16);
-}
+        //Backgroundnya
+        public static final Color COLOR_BG = new Color(18, 32, 56);           // Biru Tua (Navy-ish)
+        public static final Color COLOR_BG_STATUS = new Color(30, 46, 72);     // Biru Keabu-abuan
+        // Fontnya
+        public static final Font FONT_STATUS = new Font("SansSerif", Font.PLAIN, 14);
+        public static final Font FONT_SCORE = new Font("SansSerif", Font.BOLD, 16);
+    }
