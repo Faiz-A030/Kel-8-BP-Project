@@ -7,8 +7,8 @@ public class GameComp {
     public static final Color COLOR_BG_SCORE = new Color(100, 149, 237);      // Biru Lembut (Cornflower Blue)
 
     // Font
-    public static final Font FONT_STATUS = new Font("SansSerif", Font.BOLD, 16);
-    public static final Font FONT_SCORE = new Font("SansSerif", Font.BOLD, 18);
+    public static final Font FONT_STATUS = new Font("Monospaced", Font.BOLD, 14);
+    public static final Font FONT_SCORE = new Font("Monospaced", Font.BOLD, 20);
 
 
 }
