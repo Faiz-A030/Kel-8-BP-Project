@@ -104,14 +104,14 @@ public class Menu extends JPanel {
     private JButton createButton(String text, Color color, Runnable action) {
         JButton button = new JButton(text);
         button.setAlignmentX(Component.CENTER_ALIGNMENT);
-        button.setAlignmentY(10);
-        button.setFont(new Font("Verdana", Font.BOLD, 20));
-        button.setMaximumSize(new Dimension(240, 50));
-        button.setBackground(GameComp.COLOR_BG);
+        button.setFont(new Font("SansSerif", Font.BOLD, 22));
+        button.setPreferredSize(new Dimension(260, 60));
+        button.setBackground(new Color(28, 48, 86)); // Biru tua
         button.setForeground(Color.WHITE);
         button.setFocusPainted(false);
-
         button.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        button.setBorder(BorderFactory.createEmptyBorder(15, 30, 15, 30));
+
         button.addActionListener(e -> action.run());
         return button;
     }
