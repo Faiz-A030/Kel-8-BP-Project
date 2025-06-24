@@ -56,7 +56,7 @@ public class Menu extends JPanel {
         rightPanel.setOpaque(false);
 
         JButton exitButton = new JButton("Exit");
-        exitButton.setFont(new Font("Verdana", Font.BOLD, 16));
+        exitButton.setFont(new Font("Monospaced", Font.BOLD, 16));
         exitButton.setBackground(Color.RED);
         exitButton.setForeground(Color.WHITE);
         exitButton.setFocusPainted(false);
@@ -104,10 +104,10 @@ public class Menu extends JPanel {
     private JButton createButton(String text, Color color, Runnable action) {
         JButton button = new JButton(text);
         button.setAlignmentX(Component.CENTER_ALIGNMENT);
-        button.setFont(new Font("SansSerif", Font.BOLD, 22));
+        button.setFont(new Font("Monospaced", Font.BOLD, 22));
         button.setPreferredSize(new Dimension(260, 60));
         button.setBackground(new Color(28, 48, 86)); // Biru tua
-        button.setForeground(Color.WHITE);
+        button.setForeground(Color.BLUE);
         button.setFocusPainted(false);
         button.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         button.setBorder(BorderFactory.createEmptyBorder(15, 30, 15, 30));
