@@ -1,13 +1,12 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 import java.net.URL;
 
-public class StartMenu extends JPanel {
-    public StartMenu(JFrame frame) {
+public class Menu extends JPanel {
+    public Menu(JFrame frame) {
 
         setLayout(new BorderLayout());
-        setBackground(GameConstants.COLOR_BG);
+        setBackground(Component.COLOR_BG);
 
         // Panel tengah untuk tombol dan logo
         JPanel centerPanel = new JPanel();
@@ -108,7 +107,7 @@ public class StartMenu extends JPanel {
         button.setAlignmentY(10);
         button.setFont(new Font("Verdana", Font.BOLD, 20));
         button.setMaximumSize(new Dimension(240, 50));
-        button.setBackground(GameConstants.COLOR_BG);
+        button.setBackground(Component.COLOR_BG);
         button.setForeground(Color.WHITE);
         button.setFocusPainted(false);
 
@@ -155,7 +154,7 @@ public class StartMenu extends JPanel {
             frame.setVisible(true);
 
         }else{
-            frame.setContentPane(new StartMenu(frame));
+            frame.setContentPane(new Menu(frame));
             frame.revalidate();
             frame.repaint();
         }

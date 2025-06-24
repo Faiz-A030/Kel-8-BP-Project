@@ -9,7 +9,7 @@ public class BoardPanel extends JPanel {
 
     public BoardPanel(Board board) {
         this.board = board;
-        setBackground(GameConstants.COLOR_BG);
+        setBackground(Component.COLOR_BG);
     }
 
     @Override

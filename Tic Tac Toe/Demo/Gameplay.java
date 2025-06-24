@@ -8,7 +8,7 @@ public class Gameplay {
         SwingUtilities.invokeLater(() -> {
             JFrame frame = new JFrame(TITLE);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.setContentPane(new StartMenu(frame));
+            frame.setContentPane(new Menu(frame));
             frame.pack();
             frame.setSize(720, 900);
             frame.setLocationRelativeTo(null);
