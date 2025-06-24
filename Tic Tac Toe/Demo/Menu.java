@@ -106,7 +106,7 @@ public class Menu extends JPanel {
         button.setAlignmentX(Component.CENTER_ALIGNMENT);
         button.setFont(new Font("Monospaced", Font.BOLD, 22));
         button.setPreferredSize(new Dimension(260, 60));
-        button.setBackground(new Color(28, 48, 86)); // Biru tua
+        button.setBackground(new Color(28, 48, 86)); // Biru
         button.setForeground(Color.WHITE);
         button.setFocusPainted(false);
         button.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
