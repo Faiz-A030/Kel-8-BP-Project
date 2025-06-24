@@ -41,12 +41,12 @@ public class GameBase extends JPanel {
     public void setupUI() {
         setLayout(new BorderLayout());
         setPreferredSize(new Dimension(Board.CANVAS_WIDTH, Board.CANVAS_HEIGHT + 70));
-        setBackground(Component.COLOR_BG);
+        setBackground(GameComp.COLOR_BG);
         setBorder(BorderFactory.createLineBorder(new Color(100, 100, 130), 3));
 
         // bikin score label
         scoreLabel = new JLabel();
-        scoreLabel.setFont(Component.FONT_SCORE);
+        scoreLabel.setFont(GameComp.FONT_SCORE);
         scoreLabel.setForeground(new Color(240, 240, 255));
         scoreLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
@@ -54,9 +54,9 @@ public class GameBase extends JPanel {
         pauseButton.setMargin(new Insets(2, 10, 2, 10));
         pauseButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         pauseButton.setAlignmentY(10);
-        pauseButton.setFont(Component.FONT_STATUS);
+        pauseButton.setFont(GameComp.FONT_STATUS);
         pauseButton.setMaximumSize(new Dimension(240, 50));
-        pauseButton.setBackground(Component.COLOR_BG);
+        pauseButton.setBackground(GameComp.COLOR_BG);
         pauseButton.setForeground(Color.WHITE);
         pauseButton.setFocusPainted(false);
         pauseButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
@@ -77,11 +77,11 @@ public class GameBase extends JPanel {
 
         // bikin statusbar
         JPanel statusPanel = new JPanel(new BorderLayout());
-        statusPanel.setBackground(Component.COLOR_BG_STATUS);
+        statusPanel.setBackground(GameComp.COLOR_BG_STATUS);
         statusPanel.setPreferredSize(new Dimension(Board.CANVAS_WIDTH, 30));
 
         statusBar = new JLabel();
-        statusBar.setFont(Component.FONT_STATUS);
+        statusBar.setFont(GameComp.FONT_STATUS);
         statusBar.setForeground(Color.DARK_GRAY);
         statusBar.setBorder(BorderFactory.createEmptyBorder(6, 12, 6, 12));
         statusBar.setHorizontalAlignment(SwingConstants.LEFT);
@@ -95,7 +95,7 @@ public class GameBase extends JPanel {
 
         // bikin panel board
         boardPanel = new BoardPanel(board);
-        boardPanel.setBackground(Component.COLOR_BG);
+        boardPanel.setBackground(GameComp.COLOR_BG);
         boardPanel.addMouseListener(new MouseAdapter() {
             @Override public void mouseClicked(MouseEvent e) {
                 handleClick(e.getX(), e.getY());
@@ -156,9 +156,9 @@ public class GameBase extends JPanel {
         JButton continueButton = new JButton("Continue");
         continueButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         continueButton.setAlignmentY(10);
-        continueButton.setFont(Component.FONT_STATUS);
+        continueButton.setFont(GameComp.FONT_STATUS);
         continueButton.setMaximumSize(new Dimension(240, 50));
-        continueButton.setBackground(Component.COLOR_BG);
+        continueButton.setBackground(GameComp.COLOR_BG);
         continueButton.setForeground(Color.WHITE);
         continueButton.setFocusPainted(false);
         continueButton.addActionListener(e -> hidePauseMenu());
@@ -166,9 +166,9 @@ public class GameBase extends JPanel {
         JButton exitButton = new JButton("Exit to Menu");
         exitButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         exitButton.setAlignmentY(10);
-        exitButton.setFont(Component.FONT_STATUS);
+        exitButton.setFont(GameComp.FONT_STATUS);
         exitButton.setMaximumSize(new Dimension(240, 50));
-        exitButton.setBackground(Component.COLOR_BG);
+        exitButton.setBackground(GameComp.COLOR_BG);
         exitButton.setForeground(Color.WHITE);
         exitButton.setFocusPainted(false);
         exitButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));

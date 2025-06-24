@@ -6,14 +6,14 @@ public class Menu extends JPanel {
     public Menu(JFrame frame) {
 
         setLayout(new BorderLayout());
-        setBackground(Component.COLOR_BG);
+        setBackground(GameComp.COLOR_BG);
 
         // Panel tengah untuk tombol dan logo
         JPanel centerPanel = new JPanel();
         centerPanel.setLayout(new BoxLayout(centerPanel, BoxLayout.Y_AXIS));
         centerPanel.setOpaque(false);
 
-        // Tambahkan logo Tic Tac Toe
+        // Tambahkan logo game
 
         URL logoURL = getClass().getClassLoader().getResource("images/tictactoe_logo.png");
         if (logoURL != null) {
@@ -107,7 +107,7 @@ public class Menu extends JPanel {
         button.setAlignmentY(10);
         button.setFont(new Font("Verdana", Font.BOLD, 20));
         button.setMaximumSize(new Dimension(240, 50));
-        button.setBackground(Component.COLOR_BG);
+        button.setBackground(GameComp.COLOR_BG);
         button.setForeground(Color.WHITE);
         button.setFocusPainted(false);
 
